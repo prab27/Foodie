@@ -5,7 +5,7 @@ import { MealItem } from './MealItem.jsx';
 
 export default function Meals(){
 
-    const[loadedMeals,setLsoadedMeals] = useState([]);
+    const[loadedMeals,setLoadedMeals] = useState([]);
 
     useEffect(()=>{
         async function fetchMeals(){
