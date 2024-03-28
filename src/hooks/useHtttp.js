@@ -42,7 +42,9 @@ const sendRequest = useCallback(
 
 useEffect(()=>{
 
-   if(config && (config.method ==='GET' || !config.method)  || !config){
+  if(config && (config.method ==='GET' || !config.method)  || !config)
+  //if (!config || config.method === 'GET')
+  {
    sendRequest();
 }
 
